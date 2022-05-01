@@ -1,0 +1,29 @@
+@import "./general/reset.scss";
+@import "./general/fonts.scss";
+@import "./general/variables.scss";
+
+@import "./general/default.scss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    font-family: $fontFamily_ExtraLigth;
+    color: $primary;
+    fill: $primary;
+    stroke: $primary;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  button {
+    cursor: pointer;
+    margin: 2rem 0 0;
+    width: 100px;
+  }
+}

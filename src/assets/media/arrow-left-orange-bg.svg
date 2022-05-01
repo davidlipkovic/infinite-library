@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <defs><style>.cls-1{fill:none;}.cls-1,.cls-2{stroke:#ff8000;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:none;}</style></defs>
+    <g id="Warstwa_2" data-name="Warstwa 2"><g id="tlo">
+        <circle class="cls-1" cx="100" cy="100" r="99"/><line class="cls-2" x1="161" y1="100" x2="39" y2="100"/><path class="cls-2" d="M74,135a35,35,0,0,0-35-35"/><path class="cls-2" d="M39,100A35,35,0,0,0,74,65"/>
+    </g></g>
+</svg>

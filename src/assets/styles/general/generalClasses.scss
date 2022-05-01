@@ -1,0 +1,42 @@
+.displayNone {
+  display: none !important;
+}
+
+.displayBlock {
+  display: block !important;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fontFamilyItalic {
+  font-family: $fontFamily_ExtraLigthItalic;
+}
+
+.fontFamilyBold {
+  font-family: $fontFamily_Bold;
+}
+
+.colorGreyGreen {
+  color: $accentGreen;
+
+  * {
+    color: $accentGreen;
+  }
+
+  svg {
+    * {
+      fill: $accentGreen;
+      stroke: $accentGreen;
+    }
+
+    circle {
+      fill: $background;
+    }
+  }
+}
