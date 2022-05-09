@@ -72,6 +72,5 @@ window.addEventListener('load', () => {
     //             jsName = pages[i1]
     //         }
     //     }
-    //     console.log(jsName)
     // }
 })
