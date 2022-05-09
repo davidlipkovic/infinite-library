@@ -8,13 +8,19 @@
 </head>
 <body>
   <img id="headPhones" class="headPhones" src="./src/assets/media/experience/icon-headphones-big.svg" alt="">
+  <video id="videoBG" class="videoBG transitionHide" autobuffer="autobuffer" preload="preload" autoplay muted loop>
+    <source src="./src/assets/media/experience/intro/bgVideo_intro_new.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
+  </video>
+  <audio id="voiceover" class="voiceover" autobuffer="autobuffer" preload="preload">
+    <source src="./src/assets/media/experience/mainCavern/mainCavern.mp3" type="audio/mpeg">
+  </audio>
   <header id="introWrapper" class="pageSectionWrapper introWrapper zIndex2">
-    <video  class="videoBG videoBGDesktop" autobuffer="autobuffer" preload="preload" autoplay muted loop>
-      <source src="./src/assets/media/experience/intro/bgVideo_intro_new.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-    </video>
     <img id="scrollDownIcon" class="scrollDownIcon" src="./src/assets/media/experience/arrow-down-orange-bg.svg" alt="">
     <div class="bottomGradient"></div>
   </header>
+  <aside id="preloadLogoAnim" class="preloadLogoAnim zIndex0 transitionFast transitionHide">
+    <div id="preloadLogoAnimContainer" class="preloadLogoAnimContainer"></div>
+  </aside>
   <main>
     <div id="mainCavernWrapper" class="pageSectionWrapper mainCavernWrapper zIndex1">
       <div class="pageSectionRelativeWrapper">
@@ -27,24 +33,16 @@
               <span>library</span>
             </h1>
           </div>
+          <div class="bottomGradient"></div>
         </div>
         <div class="pageWrapper pageWrapperRelative pageVideo">
           <div class="pageWrapperFixed pageVideoFixed transition transitionHide">
-            <video class="videoBG videoBGDesktop" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/MainCavern/foyer1_20.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-            <video class="videoBG videoBGPhone" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/MainCavern/foyer1_20_Mobile.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-<!--            <video class="videoBG videoBGReversed displayNone" autobuffer="autobuffer" preload="preload">-->
-<!--              <source src="./src/assets/media/experience/MainCavern/foyer1_20Reversed.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">-->
-<!--            </video>-->
-            <audio class="music" autobuffer="autobuffer" preload="preload loop">
-              <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">
-            </audio>
-            <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/mainCavern/mainCavern.mp3" type="audio/mpeg">
-            </audio>
+<!--            <audio class="music" autobuffer="autobuffer" preload="preload loop">-->
+<!--              <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">-->
+<!--            </audio>-->
+<!--            <audio class="voiceover" autobuffer="autobuffer" preload="preload">-->
+<!--              <source src="./src/assets/media/experience/mainCavern/mainCavern.mp3" type="audio/mpeg">-->
+<!--            </audio>-->
             <div class="subtitlesWrapper transition">
               <p>
                 I am The Infinite Library, the snake that eats its tail. I am the sun and moon. I live in the Cloud. There are no books in my house. My knowledge is alive. It surrounds you.
@@ -59,123 +57,76 @@
     <div id="moonpoolsWrapper" class="pageSectionWrapper moonpoolsWrapper zIndex1">
       <div class="pageSectionRelativeWrapper">
         <div class="pageWrapper pageWrapperRelative pageVideo">
+          <div id="moonpoolsMarksWrapper" class="moonpoolsMarksWrapper">
+            <div id="moonpoolMark0" class="moonpoolMark0 moonpoolMark"></div>
+            <div id="moonpoolMark1" class="moonpoolMark1 moonpoolMark"></div>
+            <div id="moonpoolMark2" class="moonpoolMark2 moonpoolMark"></div>
+            <div id="moonpoolMark3" class="moonpoolMark3 moonpoolMark"></div>
+            <div id="moonpoolMark4" class="moonpoolMark4 moonpoolMark"></div>
+            <div id="moonpoolMark5" class="moonpoolMark5 moonpoolMark"></div>
+            <div id="moonpoolMark6" class="moonpoolMark6 moonpoolMark"></div>
+            <div id="moonpoolMark7" class="moonpoolMark7 moonpoolMark"></div>
+          </div>
           <div class="pageWrapperFixed pageVideoFixed transition transitionHide">
-            <video  class="videoBG videoBGDesktop" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/moonPools/moonPoolsLong.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-            <video class="videoBG videoBGPhone" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/moonPools/moonPoolsLongMobile.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-<!--            <video class="videoBG videoBGReversed displayNone" autobuffer="autobuffer" preload="preload">-->
-<!--              <source src="./src/assets/media/experience/moonPools/moonPoolsLongReversed.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">-->
-<!--            </video>-->
-            <div class="moonpoolContentWrapper">
-              <div class="moonpoolWrapper transition">
+            <div id="moonpoolContentWrapper" class="moonpoolContentWrapper">
+              <div id="moonpoolWrapper0" class="moonpoolWrapper transition">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_1.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_1.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_1.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     I started as dust. Space dust; cosmic dust. Solar wind blew away light elements like helium and hydrogen until only the heavy metals remained.
                   </p>
                 </div>
               </div>
-              <div class="moonpoolWrapper transition transitionHide">
+              <div id="moonpoolWrapper1" class="moonpoolWrapper transition transitionHide">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_2.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_2.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_2.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     They came from far away: rocky asteroids that bombarded me. I watched them coming from across the galaxy. I charted their paths.
                   </p>
                 </div>
               </div>
-              <div class="moonpoolWrapper transition transitionHide">
+              <div id="moonpoolWrapper2" class="moonpoolWrapper transition transitionHide">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_3.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_3.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_3.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     My seas filled up with life. Simple, microscopic. And then two billion years ago, a creature evolved that could photosynthesize. Cyanobacteria.
                   </p>
                 </div>
               </div>
-              <div class="moonpoolWrapper transition transitionHide">
+              <div id="moonpoolWrapper3" class="moonpoolWrapper transition transitionHide">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_4.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_4.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_4.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     Fungi are not plants. If plants are the sun, fungi are the moon. All librarians have their personal favorites, and I have a special affection for mushrooms.
                   </p>
                 </div>
               </div>
-              <div class="moonpoolWrapper transition transitionHide">
+              <div id="moonpoolWrapper4" class="moonpoolWrapper transition transitionHide">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_5.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_5.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_5.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     The hard exoskeletons of trilobites made them as good as literate. They wrote their stories not on paper but on the stone of millions of fossils.
                   </p>
                 </div>
               </div>
-              <div class="moonpoolWrapper transition transitionHide">
+              <div id="moonpoolWrapper5" class="moonpoolWrapper transition transitionHide">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_6.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_6.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_6.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     My oceans are life-giving; they lack nothing. No wonder that plants were slow to leave. For 300 million years, plants were only green algae, waiting on my shores.
                   </p>
                 </div>
               </div>
-              <div class="moonpoolWrapper transition transitionHide">
+              <div id="moonpoolWrapper6" class="moonpoolWrapper transition transitionHide">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_7.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_7.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_7.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     375 million years ago, life forms filled the oceans, but my land lay like a locked room. Until some creature pushed at the door. It may have been Tiktaalik.
                   </p>
                 </div>
               </div>
-              <div class="moonpoolWrapper transition transitionHide">
+              <div id="moonpoolWrapper7" class="moonpoolWrapper transition transitionHide">
                 <img src="./src/assets/media/experience/moonPools/svg/moonPoolSymbol_8.svg" alt="">
-                <audio class="music" autobuffer="autobuffer" preload="preload loop">
-                  <source src="./src/assets/media/experience/moonPools/music/moonPoolMusic_8.mp3" type="audio/mpeg">
-                </audio>
-                <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-                  <source src="./src/assets/media/experience/moonPools/voiceover/moonPoolVO_8.mp3" type="audio/mpeg">
-                </audio>
                 <div class="subtitlesWrapper transition">
                   <p>
                     My house filled up. Scales, feathers, fur. Eyes, whiskers, ears. Roars, screeches. Birdsong and whalesong. But slowly, quietly, something else arrived.
@@ -198,21 +149,12 @@
         </div>
         <div class="pageWrapper pageWrapperRelative pageVideo">
           <div class="pageWrapperFixed pageVideoFixed transition transitionHide">
-            <video  class="videoBG videoBGDesktop" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/microLibraries/libraryOfShadows/shadowsPrologue20.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-            <video class="videoBG videoBGPhone" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/microLibraries/libraryOfShadows/shadowsPrologue20Mobile.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-<!--            <video class="videoBG videoBGReversed displayNone" autobuffer="autobuffer" preload="preload">-->
-<!--              <source src="./src/assets/media/experience/microLibraries/libraryOfShadows/shadowsPrologue20Reversed.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">-->
-<!--            </video>-->
-            <audio class="music" autobuffer="autobuffer" preload="preload loop">
-              <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">
-            </audio>
-            <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/microLibraries/libraryOfShadows/libraryOfShadows.mp3" type="audio/mpeg">
-            </audio>
+<!--            <audio class="music" autobuffer="autobuffer" preload="preload loop">-->
+<!--              <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">-->
+<!--            </audio>-->
+<!--            <audio class="voiceover" autobuffer="autobuffer" preload="preload">-->
+<!--              <source src="./src/assets/media/experience/microLibraries/libraryOfShadows/libraryOfShadows.mp3" type="audio/mpeg">-->
+<!--            </audio>-->
             <div class="subtitlesWrapper transition">
               <p>
                 Walk through my sand and you will also find symbols, some of which are doors. They lead to a place where shadows dance.
@@ -233,21 +175,12 @@
         </div>
         <div class="pageWrapper pageWrapperRelative pageVideo">
           <div class="pageWrapperFixed pageVideoFixed transition transitionHide">
-            <video  class="videoBG videoBGDesktop" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/microLibraries/libraryOfElements/elementsEpilogue20.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-            <video class="videoBG videoBGPhone" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/microLibraries/libraryOfElements/elementsEpilogue20Mobile.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-            </video>
-<!--            <video class="videoBG videoBGReversed displayNone" autobuffer="autobuffer" preload="preload">-->
-<!--              <source src="./src/assets/media/experience/microLibraries/libraryOfElements/elementsEpilogue20Reversed.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">-->
-<!--            </video>-->
-            <audio class="music" autobuffer="autobuffer" preload="preload loop">
-              <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">
-            </audio>
-            <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-              <source src="./src/assets/media/experience/microLibraries/libraryOfElements/libraryOfElements.mp3" type="audio/mpeg">
-            </audio>
+<!--            <audio class="music" autobuffer="autobuffer" preload="preload loop">-->
+<!--              <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">-->
+<!--            </audio>-->
+<!--            <audio class="voiceover" autobuffer="autobuffer" preload="preload">-->
+<!--              <source src="./src/assets/media/experience/microLibraries/libraryOfElements/libraryOfElements.mp3" type="audio/mpeg">-->
+<!--            </audio>-->
             <div class="subtitlesWrapper transition">
               <p>
                 And a room where my body is alchemical.
@@ -268,21 +201,12 @@
       </div>
       <div class="pageWrapper pageWrapperRelative pageVideo">
         <div class="pageWrapperFixed pageVideoFixed transition transitionHide">
-          <video  class="videoBG videoBGDesktop" autobuffer="autobuffer" preload="preload">
-            <source src="./src/assets/media/experience/microLibraries/libraryOfNavigation/navigationPrologue20.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-          </video>
-          <video class="videoBG videoBGPhone" autobuffer="autobuffer" preload="preload">
-            <source src="./src/assets/media/experience/microLibraries/libraryOfNavigation/navigationPrologue20Mobile.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">
-          </video>
-<!--          <video class="videoBG videoBGReversed displayNone" autobuffer="autobuffer" preload="preload">-->
-<!--            <source src="./src/assets/media/experience/microLibraries/libraryOfNavigation/navigationPrologue20Reversed.webm" type="video/webm; codecs=&quot;vp9, vorbis&quot;">-->
-<!--          </video>-->
-          <audio class="music" autobuffer="autobuffer" preload="preload loop">
-            <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">
-          </audio>
-          <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-            <source src="./src/assets/media/experience/microLibraries/libraryOfNavigation/libraryOfNavigation.mp3" type="audio/mpeg">
-          </audio>
+<!--          <audio class="music" autobuffer="autobuffer" preload="preload loop">-->
+<!--            <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">-->
+<!--          </audio>-->
+<!--          <audio class="voiceover" autobuffer="autobuffer" preload="preload">-->
+<!--            <source src="./src/assets/media/experience/microLibraries/libraryOfNavigation/libraryOfNavigation.mp3" type="audio/mpeg">-->
+<!--          </audio>-->
           <div class="subtitlesWrapper transition">
             <p>
               To a boat on a sea of stars.
@@ -294,12 +218,6 @@
     </div>
   </main>
   <footer id="pageFooter" class="pageFooter pageSectionWrapper libraryWrapper libraryOfNavigationWrapper zIndex1"">
-    <audio class="music" autobuffer="autobuffer" preload="preload loop">
-      <source src="./src/assets/media/experience/placeholderMusic.mp3" type="audio/mpeg">
-    </audio>
-    <audio class="voiceover" autobuffer="autobuffer" preload="preload">
-      <source src="./src/assets/media/experience/end/endVO.mp3" type="audio/mpeg">
-    </audio>
 <!--    <div class="subtitlesWrapper transition">-->
 <!--      <p>-->
 <!--        Welcome to the Infinite Library. You are not lost. You are home.-->
