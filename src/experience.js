@@ -136,9 +136,10 @@ const videoBGHandlerWrapper = () => {
                 voiceoverFn(voiceoverEl, pageVideoObjects[a].pageVideo)
             }
         } else {
+            console.log(videoEl, 'halo')
             setTimeout(() => {
                 videoPreloadHandler(pageVideoObject, el, scrollFnCheck)
-            }, 10)
+            }, 50)
         }
     }
 
