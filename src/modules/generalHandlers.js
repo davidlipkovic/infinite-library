@@ -6,6 +6,9 @@ import lottie from 'lottie-web'
 const closeFn = el => {
     el.classList.add('displayNone')
     document.documentElement.classList.remove('overflowHidden')
+    if (el.parentElement.parentElement.parentElement.parentElement.classList.contains('pageLibraries')) {
+        el.parentElement.parentElement.parentElement.parentElement.classList.remove('zIndex101')
+    }
 }
 
 const jarContentFn = (library, btnSelector, wrapperSelector) => {
@@ -39,6 +42,9 @@ const jarContentFn = (library, btnSelector, wrapperSelector) => {
 const openFn = el => {
     el.classList.remove('displayNone')
     document.documentElement.classList.add('overflowHidden')
+    if (el.parentElement.parentElement.parentElement.parentElement.classList.contains('pageLibraries')) {
+        el.parentElement.parentElement.parentElement.parentElement.classList.add('zIndex101')
+    }
 }
 
 const pageMenuFn = (menuBtnWrapper, pageMenu) => {

@@ -3,3 +3,5 @@
 /src/assets/media/experience/moonPools/moonPoolsLongSymbols.mp4
 /src/assets/media/experience/intro/bgVideo_intro.mp4
 /src/assets/media/experience/intro/bgVideo_intro_new.mp4
+node_modules
+dist
