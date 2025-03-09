@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Camera Check</title>
+</head>
+<body>
+<h1>Camera Check</h1>
+<p>Available cameras:</p>
+<ul id="cameras"></ul>
+
+<script>
+    navigator.mediaDevices.enumerateDevices()
+        .then(devices => {
+            const cameras = devices.filter(device => device.kind === 'videoinput');
+            const camerasList = document.getElementById('cameras');
+
+            if (cameras.length === 0) {
+                camerasList.innerHTML = '<li>No cameras found</li>';
+                return;
+            }
+
+            cameras.forEach(camera => {
+                const li = document.createElement('li');
+                li.textContent = camera.label;
+                camerasList.appendChild(li);
+            });
+        })
+        .catch(error => {
+            console.error('Error enumerating devices:', error);
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+<!--<div class="d-grid gap-2 col-6 mx-auto">-->
+<!--    <br>-->
+<!--    <H4> <span class="highlightColor2 italics" data-langkey="correctJar1_header"></span></H4>-->
+<!--    <br>-->
+<!--    <img src="assets/images/asteroid.png" class = "img-responsive" width = "100%"/>-->
+
+<!--    <p>-->
+<!--    <H5> <span class="highlightColor2" data-langkey="correctJar1_beforeCorrectJar"></span><span class="italics uppercase" data-langkey="correctJar1_correctJar"></span><span data-langkey="correctJar1_afterCorrectJar"></span></H5>-->
+<!--    </p>-->
+
+<!--    <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">-->
+<!--    <label id="jarContinue" class="btn btn-outline-primary" for="btn-check-outlined" data-langkey="generic_continue"></label>-->
+<!--</div>-->
+<style>
+    .scrollable-content{
+        overflow:auto;
+        display:block;
+        height:200px;
+    }
+    .scrollable-content div{
+        animation-name: example;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes example {
+        from {
+            /*background-color: rgba(250,0,0,0.5);*/
+            transform:translateY(50px)
+        }
+        to {
+            /*background-color: rgba(250,250,0,0.5);*/
+            transform:translateY(0px);
+        }
+    }
+
+    .scroller {
+        height: 300px;
+        /*line-height: 1.2em;*/
+        position: relative;
+        overflow: hidden;
+        width: 17em;
+    }
+    .scroller > span {
+        position: absolute;
+        top: 0;
+        animation: slide 10s 1;
+        /*font-weight: bold;*/
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes slide {
+        0% {
+            top: 0;
+
+        }
+        100% {
+            top: -3.6em;
+        }
+    }
+</style>
+
+
+<div class="d-grid  mx-auto">
+
+    <div class="row top-buffer-10">
+        <div class="col">
+            <img id="correctJarImage" src="assets/images/symbols/1_Origin.png" class = "img-responsive" width = "40%"/>
+        </div>
+    </div>
+
+    <div id="scroll1" class="row mx-auto" >
+        <div id="correctJarText" class="col col-8 mx-auto" style="overflow: hidden; height: 400px;" data-langkey="correctJar1_text"></div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-8 mx-auto">
+            <img  id="jarContinue" class="btn" src="assets/images/icons/background/arrow-right-orange-bg.svg" width="60%" />
+        </div>
+    </div>
+
+</div>
+<script>
+    pageScroll();
+    function pageScroll() {
+        document.getElementById("correctJarText").scrollBy(0, 1);
+        scrolldelay = setTimeout(pageScroll, 2);
+    }
+</script>

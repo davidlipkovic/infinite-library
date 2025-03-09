@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Gruppe_7218" data-name="Gruppe 7218" transform="translate(-607.001 -960.284)">
+    <g id="Gruppe_7206" data-name="Gruppe 7206" transform="translate(622.549 971.456)">
+      <path id="Polygon_1" data-name="Polygon 1" d="M11.588,1.57a1,1,0,0,1,1.747,0L24.1,20.9a1,1,0,0,1-.874,1.486H1.7A1,1,0,0,1,.827,20.9Z" transform="translate(22.385 0) rotate(90)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+    <g id="Gruppe_7217" data-name="Gruppe 7217" transform="translate(607 959.999)">
+      <g id="Ellipse_36" data-name="Ellipse 36" transform="translate(0.001 0.285)" fill="none" stroke="#fff" stroke-width="2.5">
+        <circle cx="24" cy="24" r="24" stroke="none"/>
+        <circle cx="24" cy="24" r="22.75" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

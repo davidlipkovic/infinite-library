@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title></title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+<!--    <script src="html5-qrcode.min.js"></script>-->
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <style>
+
+        body {
+            background: #CCC;
+        }
+        div {
+            /*width: 500px;*/
+        }
+        video {
+            /*width: 50%;*/
+            /*-webkit-mask-box-image: url(http://jsbin.com/laday.svg);*/
+            clip-path: circle(33.0% at 50% 50%);
+        }
+        #backImage{
+            display: block;
+            position: absolute;
+            /*top: 0px; */
+            z-index: 1;
+            background-image: url('scanbackground.jpg');
+            text-align: center;
+            background-repeat:no-repeat;
+            width: 100%;
+        }
+        #qr-shaded-region{
+            /*background-image: url('scanbackground.jpg');*/
+            /*background-repeat:no-repeat;*/
+            /*width: 100%;*/
+            /*display: none;*/
+            border-color: rgba(75,75,75,0) !important;
+        }
+        #reader{
+            /*position: absolute;*/
+            width: 450px !important;
+            height: 450px !important;
+            display: block;
+        }
+        #reader video{
+            /*background-image: url('scanbackground.jpg');*/
+            /*background-repeat:no-repeat;*/
+            width: 450px !important;
+            height: 450px !important;
+            display: block;
+
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+
+    <div class="col">
+        <div class="overlay overlay-primary has-bg-img rounded h-10rem my-2">
+            <div class="overlay-content align-items-end text-white">Primary overlay</div>
+            <div id="backImage">
+                <div id="reader"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    function onScanSuccess(decodedText, decodedResult) {
+        // Handle on success condition with the decoded text or result.
+        console.log(`Scan result: ${decodedText}`, decodedResult);
+    }
+
+    function onScanFailure(error) {
+        // handle scan failure, usually better to ignore and keep scanning.
+        // for example:
+        console.warn(`Code scan error = ${error}`);
+    }
+
+    // var html5QrcodeScanner = new Html5QrcodeScanner(
+    //     "reader", { fps: 10,qrbox: {width: 250, height: 250} });
+
+    //
+    // let html5QrcodeScanner = new Html5QrcodeScanner(
+    //     "reader",
+    //     { fps: 10, qrbox: {width: 250, height: 250} },
+    //     /* verbose= */ false);
+    //
+    // html5QrcodeScanner.render(onScanSuccess);
+
+
+    const html5QrCode = new Html5Qrcode("reader");
+    const qrCodeSuccessCallback = (decodedText, decodedResult) => {
+        /* handle success */
+        console.log(`Scan result: ${decodedText}`, decodedResult);
+    };
+    const config = { fps: 10, qrbox: { width: 200, height: 200 } };
+    //const config = { fps: 10};
+
+    // If you want to prefer back camera
+    html5QrCode.start({ facingMode: "environment" }, config, qrCodeSuccessCallback);
+
+</script>
+</body>
+</html>

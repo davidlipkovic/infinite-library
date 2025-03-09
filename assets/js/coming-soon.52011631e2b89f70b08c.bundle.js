@@ -1,0 +1,1 @@
+(()=>{"use strict";window.addEventListener("load",(function(){document.querySelector(".goBackBtn").addEventListener("click",(function(){history.back()}))}))})();
