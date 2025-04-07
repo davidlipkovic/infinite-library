@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Infinite Library | Transformers</title>
+    <meta name="description" content="The infinite library is a travelling installation procuded by th Goethe-Institut / Max Mueller Bhavan New Delhi. It reimagines the future of libraries as interactive spaces that engage visitors through multisensory forms of storytelling.">
+    <meta name="author" content="Daisy with Rider Productions">
+
+    <!-- og info -->
+    <meta property="og:title" content="The Infinite Library" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://infinite-library.com/experience" />
+    <meta property="og:image" content="assets/img/og.jpg" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body class="subpage">
+
+
+    <!-- N A V I G A T I O N -->
+
+    <!-- home button (desktop) -->
+    <a class="home-button desktop" href="index.html">
+        <img src="assets/img/logo.svg">
+    </a>
+
+    <!-- navigation -->
+    <div class="nav-container" id="nav-container">
+
+        <!-- home button (mobile)-->
+        <a class="home-button mobile" href="index.html">
+            <img src="assets/img/logo-w.svg">
+        </a>
+
+        <!-- language switch (desktop) -->
+        <div class="language-switch">
+            <a href="3-transformers.html" class="active">EN</a>
+            <a href="3-umwandler.html">DE</a>
+        </div>
+
+        <!-- open nav button (desktop) -->
+        <img class="desktop open-nav-button" src="assets/img/icon-menu-closed.svg" onclick="openMenu()">
+
+        <!-- open nav button (mobile) -->
+        <img class="mobile open-nav-button" src="assets/img/icon-menu-closed-w.svg" onclick="openMenu()">
+
+    </div>
+
+    <!-- slide in navigation -->
+    <nav id="menu">
+
+        <!-- close nav button -->
+        <img class="close-nav-button" src="assets/img/icon-menu-opened.svg" onclick="closeMenu()">
+
+        <ul>
+            <li><a href="https://infinite-library.com/" target="_blank" rel="noopener noreferrer">Learn</a></li>
+            <li><a href="https://infinite-library.com/coming-soon.html" target="_blank" rel="noopener noreferrer">Experience</a></li>
+            <li><a href="https://infinite-library.com/booking.html" target="_blank" rel="noopener noreferrer">Book</a></li>
+            <li><a href="https://infinite-library.com/" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+
+        <ul class="social">
+            <li>
+                <a href="https://www.instagram.com/infinitelibraryvr/" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_instagram.svg"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/infinitelibrary" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_facebook.svg"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/inf_library" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_twitter.svg"></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@infinitelibrary" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_tiktok.svg"></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- C O N T E N T -->
+
+    <!-- slide content -->
+    <div class="slide active" id="slide">
+
+        <!-- close slide button -->
+        <a href="index.html" class="close-slide-button" onclick="closeSlide()">
+            <img src="assets/img/icon-close-slide.svg">
+        </a>
+
+        <!-- visual area -->
+        <div class="visual">
+
+            <!-- headline -->
+            <div class="headline">
+                <h1><b>3</b> Transformers</h1>
+                <h2>Cosmic pool</h2>
+            </div>
+
+            <div class="model-canvas">
+
+                <!-- arrows -->
+                <div class="arrows">
+                    <img class="arrow-left" src="assets/img/arrow-left.svg">
+                    <img class="arrow-right" src="assets/img/arrow-right.svg">
+                </div>
+
+                <!-- modelviewer canvas -->
+                <!-- src = 3d model, image = HDR environment -->
+                <model-viewer id="lazy-load" auto-rotate alt="A 3D model of cynobacteria." src="assets/models/cynobacteria.glb" shadow-intensity="0.2" camera-controls touch-action="pan-y" environment-image="assets/img/kurt-cotoaga-cqbLg3lZEpk-unsplash.jpg" poster="assets/img/cynobacteria_poster.webp"></model-viewer>
+
+            </div>
+
+        </div>
+
+        <!-- text area -->
+        <div class="text">
+
+            <p class="quote">»</p>
+
+            <h3>My seas filled up with life.</h3>
+
+            <!-- audio button -->
+            <div id="audio-icon" class="audio-button" onclick="togglePlay()">
+
+                <div>
+                    <img class="play" src="assets/img/icon-play.svg">
+                    <img class="pause" src="assets/img/icon-pause.svg">
+                </div>
+
+                <span>Listen</span>
+            </div>
+
+            <!-- audio file -->
+            <audio id="audio" controls>
+                <source src="assets/audio/3_Transformers_MoonPool.mp3" type="audio/mpeg">
+            </audio>
+
+            <p>
+                Simple, microscopic. And then two billion years ago, a creature evolved that could photosynthesize. Cyanobacteria. It made energy from sunlight, with oxygen as waste. This life-form out-multiplied the others. Like a broken toy, like a computer error, it performed the same operation a trillion times, turning my oceans into a factory for oxygen. For the first time, oxygen flooded the atmosphere. It nearly choked me. The other creatures died. The earth cooled, froze. Life almost vanished — but it didn’t. And when life returned, the genius of oxygen inspired new diversity.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- S C R I P T S -->
+
+    <!-- lazyload -->
+    <script src="assets/js/plugins/lazyload/lazyload.min.js"></script>
+
+    <!-- modelviewer js -->
+    <script type="module" src="assets/js/plugins/model-viewer/model-viewer.min.js"></script>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- audio js -->
+    <script src="assets/js/audio.js"></script>
+
+</body></html>

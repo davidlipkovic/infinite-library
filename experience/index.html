@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Infinite Library</title>
+    <meta name="description" content="The infinite library is a travelling installation procuded by th Goethe-Institut / Max Mueller Bhavan New Delhi. It reimagines the future of libraries as interactive spaces that engage visitors through multisensory forms of storytelling.">
+    <meta name="author" content="Daisy with Rider Productions">
+
+    <!-- og info -->
+    <meta property="og:title" content="The Infinite Library" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://infinite-library.com/experience" />
+    <meta property="og:image" content="assets/img/og.jpg" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body class="landingpage">
+
+
+    <!-- N A V I G A T I O N -->
+
+    <!-- home button (desktop) -->
+    <a class="home-button desktop" href="index.html">
+        <img src="assets/img/logo.svg">
+    </a>
+
+    <!-- navigation -->
+    <div class="nav-container" id="nav-container">
+
+        <!-- home button (mobile)-->
+        <a class="home-button mobile" href="index.html">
+            <img src="assets/img/logo-w.svg">
+        </a>
+
+        <!-- language switch (desktop) -->
+        <div class="language-switch">
+            <a href="index.html" class="active">EN</a>
+            <a href="index_de.html">DE</a>
+        </div>
+
+        <!-- open nav button (desktop) -->
+        <img class="desktop open-nav-button" src="assets/img/icon-menu-closed.svg" onclick="openMenu()">
+
+        <!-- open nav button (mobile) -->
+        <img class="mobile open-nav-button" src="assets/img/icon-menu-closed-w.svg" onclick="openMenu()">
+
+    </div>
+
+    <!-- slide in navigation -->
+    <nav id="menu">
+
+        <!-- close nav button -->
+        <img class="close-nav-button" src="assets/img/icon-menu-opened.svg" onclick="closeMenu()">
+
+        <ul>
+            <li><a href="https://infinite-library.com/" target="_blank" rel="noopener noreferrer">Learn</a></li>
+            <li><a href="index.html">Experience</a></li>
+            <li><a href="https://infinite-library.com/booking.html" target="_blank" rel="noopener noreferrer">Book</a></li>
+            <li><a href="https://infinite-library.com/" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+
+        <ul class="social">
+            <li>
+                <a href="https://www.instagram.com/infinitelibraryvr/" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_instagram.svg"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/infinitelibrary" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_facebook.svg"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/inf_library" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_twitter.svg"></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@infinitelibrary" target="_blank" rel="noopener noreferrer"><img src="assets/img/sm_tiktok.svg"></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- I N T R O -->
+
+    <div id="intro" class="intro-animation animated">
+
+        <div class="skip">
+            <p onclick="skipIntro()">Skip intro</p>
+        </div>
+
+        <div class="slide-1">
+            <img class="lazy" data-src="assets/img/title.svg">
+        </div>
+
+        <div class="slide-2">
+            <img class="lazy" data-src="assets/img/snake.svg">
+        </div>
+
+        <div class="slide-3">
+            <img class="lazy" data-src="assets/img/circles.svg">
+        </div>
+    </div>
+
+
+
+    <!-- C O N T E N T -->
+
+    <!-- main canvas -->
+    <div id="content" class="content">
+        <div class="bg"></div>
+        <div id="grid" class="grid">
+
+            <!-- M A I N  C A V E R N -->
+
+            <a href="0-main-cavern.html" class="grid__item pos-main-cavern">
+                <img class="grid__item-img lazy" data-src="assets/img/0-main-cavern.svg">
+
+                <span class="tooltip">
+                    <b>0 &mdash; Main cavern</b>
+                    <span>Why a cave?</span>
+                </span>
+
+            </a>
+
+
+            <!-- M O O N  P O O L S -->
+
+            <!-- moon pool 1 -->
+            <a href="1-origin.html" class="small grid__item pos-moon-pool-1">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-1.svg">
+
+                <span class="tooltip">
+                    <b>1 &mdash; Origin</b>
+                    <span>I started as dust.</span>
+                </span>
+            </a>
+
+            <!-- moon pool 2 -->
+            <a href="2-visitors.html" class="small grid__item pos-moon-pool-2">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-2.svg">
+
+                <span class="tooltip">
+                    <b>2 &mdash; Visitors</b>
+                    <span>They came from far away.</span>
+                </span>
+            </a>
+
+            <!-- moon pool 3 -->
+            <a href="3-transformers.html" class="medium grid__item pos-moon-pool-3">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-3.svg">
+
+                <span class="tooltip">
+                    <b>3 &mdash; TRANSFORMERS</b>
+                    <span>My seas filled up with life.</span>
+                </span>
+            </a>
+
+            <!-- moon pool 4 -->
+            <a href="4-familiars.html" class="medium grid__item pos-moon-pool-4">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-4.svg">
+
+                <span class="tooltip">
+                    <b>4 &mdash; FAMILIARS</b>
+                    <span>Fungi are not plants.</span>
+                </span>
+            </a>
+
+            <!-- moon pool 5 -->
+            <a href="5-explorers.html" class="grid__item pos-moon-pool-5">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-5.svg">
+
+                <span class="tooltip">
+                    <b>5 &mdash; EXPLORERS</b>
+                    <span>Literate trilobites.</span>
+                </span>
+            </a>
+
+            <!-- moon pool 6 -->
+            <a href="6-companions.html" class="small grid__item pos-moon-pool-6">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-6.svg">
+
+                <span class="tooltip">
+                    <b>6 &mdash; COMPANIONS</b>
+                    <span>My oceans are life-giving.</span>
+                </span>
+            </a>
+
+            <!-- moon pool 7 -->
+            <a href="7-pioneers.html" class="grid__item pos-moon-pool-7">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-7.svg">
+
+                <span class="tooltip">
+                    <b>7 &mdash; PIONEERS</b>
+                    <span>Life forms filled the oceans.</span>
+                </span>
+            </a>
+
+            <!-- moon pool 8 -->
+            <a href="8-innovators.html" class="medium grid__item pos-moon-pool-8">
+                <img class="grid__item-img lazy" data-src="assets/img/symbol_moonpool-bg-8.svg">
+
+                <span class="tooltip">
+                    <b>8 &mdash; INNOVATORS</b>
+                    <span>My house filled up.</span>
+                </span>
+            </a>
+
+
+            <!-- L I B R A R I E S -->
+
+            <!-- library of shadows -->
+            <a href="r-1-library-of-shadows.html" class="grid__item pos-library-1 large">
+                <img class="grid__item-img lazy" data-src="assets/img/R1-library-of-shadows.svg">
+
+                <span class="tooltip">
+                    <b>LIBRARY OF SHADOWS</b>
+                    <span>Togalu gombeyaata<br> in Karnataka, India.</span>
+                </span>
+            </a>
+
+            <!-- library of elements -->
+            <a href="r-2-library-of-elements.html" class="grid__item pos-library-2 large">
+                <img class="grid__item-img lazy" data-src="assets/img/R2-library-of-elements.svg">
+
+                <span class="tooltip">
+                    <b>LIBRARY OF ELEMENTS</b>
+                    <span>The Celestial Garden of<br>Medieval Alchemy.</span>
+                </span>
+            </a>
+
+            <!-- library of shadows -->
+            <a href="r-3-library-of-navigation.html" class="grid__item pos-library-3 large">
+                <img class="grid__item-img lazy" data-src="assets/img/R3-library-of-navigation.svg">
+
+                <span class="tooltip">
+                    <b>LIBRARY OF NAVIGATION</b>
+                    <span>Starpaths of the Pacific.</span>
+                </span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+    <!-- lazyload -->
+    <script src="assets/js/plugins/lazyload/lazyload.min.js"></script>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
